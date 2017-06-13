@@ -1,10 +1,10 @@
-#header { background-color: #000; }
+#header { background-color: #000; font-family: 'Kaushan Script', cursive; }
 #header img { width: 100%; max-width: 200px; }
 #header h1 { display: inline; }
 
 body {
     color: #fff;
-    font-family: 'Kaushan Script', cursive;
 }
 
 #title_div { text-align: center; padding: 40px 40px; }
+#who_we_are { color: black; padding: 40px 40px; }
