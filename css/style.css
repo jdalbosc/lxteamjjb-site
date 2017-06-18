@@ -1,6 +1,6 @@
-#header { background-color: #000; font-family: 'Kaushan Script', cursive; }
-#header img { width: 100%; max-width: 200px; }
-#header h1 { display: inline; }
+.page-header { background-color: #000; font-family: 'Kaushan Script', cursive; margin: 0px 0px; padding: 0px; }
+.page-header img { width: 100%; max-width: 200px; }
+.page-header h1 { display: inline; }
 
 body {
     color: #fff;
@@ -18,4 +18,19 @@ body {
     margin: auto;
     height: 540px;
     width: 100%;
+}
+
+.navbar {
+  background-color: black;
+  border: none;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.navbar-header {
+  padding-left: 10px;
+}
+
+.navbar button {
+  border: none;
 }
