@@ -1,4 +1,4 @@
-.page-header { font-family: 'Kaushan Script', cursive; background-color: #000; color: #fff; margin: 0px 0px; padding: 0px; }
+.page-header { font-family: 'Kaushan Script', cursive; background-color: #000; color: #fff; margin: 0px 0px; padding: 0px; border: none; }
 .page-header img { width: 100%; max-width: 200px; }
 .page-header h1 { display: inline; }
 
