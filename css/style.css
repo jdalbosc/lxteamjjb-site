@@ -38,3 +38,12 @@
 .navbar-invert .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+
+#where_we_are { background-color: #f3f3f3; padding: 40px 40px; }
+footer { background-color: #2d2d30; color: #bdbdbd; }
+body .container-fluid { padding: 0px; }
+
+#googleMap {
+  height: 400px;
+  width: 100%;
+}
