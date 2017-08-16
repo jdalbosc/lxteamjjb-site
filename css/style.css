@@ -16,6 +16,14 @@
     width: 100%;
 }
 
+.carousel-caption {
+  position: absolute;
+  top: 0px;
+}
+.carousel-caption span {
+  font-size: 42px;
+   font-family: 'Kaushan Script', cursive;
+}
 .navbar {
   border: none;
   border-radius: 0px;
