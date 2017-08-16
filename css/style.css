@@ -40,10 +40,32 @@
 }
 
 #where_we_are { background-color: #f3f3f3; padding: 40px 40px; }
-footer { background-color: #2d2d30; color: #bdbdbd; }
 body .container-fluid { padding: 0px; }
 
 #googleMap {
   height: 400px;
   width: 100%;
+}
+
+footer { background-color: #2d2d30; color: #bdbdbd; }
+
+
+.standard-text-footer {
+  margin-left: 3px;
+  display:inline-block;
+  line-height:29px;
+  height:29px;
+}
+
+.facebook-text-footer {
+  margin-right:3px;
+  display: inline-block;
+  line-height: 29px;
+  height: 29px;
+  
+}
+.facebook-picto {
+  display: inline-block;
+  line-height: 29px;
+  height: 29px;
 }
