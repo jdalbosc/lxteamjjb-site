@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +8,7 @@
     <title>LX Team JJB, jiu-jitsu brésilien, grappling</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CLobster%7COpen+Sans" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
@@ -60,7 +61,7 @@
       <!-- / navbar -->
       <div class="row">
         <div id="logo_div" class="col-sm-2">
-          <img src="pix/logo.jpg" style="margin-left: auto; margin-right:auto; display: block;"></img>
+          <img src="pix/logo.jpg" style="margin-left: auto; margin-right:auto; display: block;" alt="LX Team JJB" />
         </div>
         <div id="title_div" class="col-sm-10 text-center">
           <h1>LX Team JJB, jiu-jitsu brésilien, grappling, MMA</h1>
@@ -89,7 +90,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="pix/lx_team.jpg" alt="A remplir">
+          <img src="pix/lx_team.jpg" alt="Photo de groupe" />
           <div class="carousel-caption">
               <span>Photo de famille de la team</span>
               <!-- <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
@@ -97,55 +98,55 @@
           </div>
         </div>
         <div class="item">
-          <img src="pix/everyone_no_gi2.jpg" alt="A remplir">
+          <img src="pix/everyone_no_gi2.jpg" alt="Tout le monde en ligne pour le cours de MMA" />
           <div class="carousel-caption">
               <span>Cours de MMA</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/rolling_no_gi2.jpg" alt="A remplir">
+          <img src="pix/rolling_no_gi2.jpg" alt="Combats au sol en MMA" />
           <div class="carousel-caption">
-              <span>Combat au sol en MMA</span>
+              <span>Combats au sol en MMA</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/crossfit.jpg" alt="A remplir">
+          <img src="pix/crossfit.jpg" alt="Entraînement en mode crossfit" />
           <div class="carousel-caption">
-              <span>Entraînement mode crossfit</span>
+              <span>Entraînement en mode crossfit</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/pilate.jpg" alt="A remplir">
+          <img src="pix/pilate.jpg" alt="Séance découverte du pilates" />
           <div class="carousel-caption">
               <span>Séance découverte du pilates</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/rolling2.jpg" alt="A remplir">
+          <img src="pix/rolling2.jpg" alt="Combats au sol en JJB" />
           <div class="carousel-caption">
               <span>Silence! Ca tourne...</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/chipo_or2.jpg" alt="A remplir">
+          <img src="pix/chipo_or2.jpg" alt="Flo en or Mantes Challenge 2016" />
           <div class="carousel-caption">
               <span>Flo en or Mantes Challenge 2016</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/medals.jpg" alt="A remplir">
+          <img src="pix/medals.jpg" alt="Médailles au GIC 2016" />
           <div class="carousel-caption">
               <span>Le travail paye GIC 2016</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/resto.jpg" alt="A remplir">
+          <img src="pix/resto.jpg" alt="A table en groupe au restaurant après une compétition" />
           <div class="carousel-caption">
               <span>Après l'effort, le réconfort...</span>
           </div>
         </div>
         <div class="item">
-          <img src="pix/lx_team_back.jpg" alt="A remplir">
+          <img src="pix/lx_team_back.jpg" alt="Photo de groupe de dos" />
           <div class="carousel-caption">
               <span>A bientôt</span>
           </div>
@@ -181,14 +182,15 @@
     <!-- container-fluid -->
     <div class="container-fluid">
       <div id="where_we_are" >
-        <p>Nous sommes situés à l'adresse:
-          <div style="text-align: center">
-            <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe</br>
-            Rue de la Palombe</br>
-            95610 Éragny</br>
-            <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98</br>
-          </div>
-        </p>
+        <div id="adresse">
+          <p>Nous sommes situés à l'adresse:</p>
+          <p style="text-align: center">
+              <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe<br />
+              Rue de la Palombe<br />
+              95610 Éragny<br />
+              <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98<br />
+          </p>
+        </div>
         <!-- Add Google Maps -->
         <div id="googleMap"></div>
         <script>
@@ -210,7 +212,7 @@
       <div class="container-fluid">
           <div class="row align-items-center" style="">
             <div class="col-lg-12 col-sm-4"><a class="up-arrow" href="#" data-toggle="tooltip" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span><br>Retour au sommet</a></div>
-            <div class="col-sm-4 col-lg-6"><span class="facebook-text-footer">Retrouvez nous sur facebook:</span><a class="facebook-picto" href="https://www.facebook.com/lxteamjjb/"><img src="pix/FB-f-Logo__blue_29.png"></img></a></div>
+            <div class="col-sm-4 col-lg-6"><span class="facebook-text-footer">Retrouvez nous sur facebook:</span><a class="facebook-picto" href="https://www.facebook.com/lxteamjjb/"><img src="pix/FB-f-Logo__blue_29.png" alt="Facebook" /></a></div>
             <div class="col-sm-4 col-lg-6"><span class="glyphicon glyphicon-copyright-mark"></span><span class="standard-text-footer">Copyright LX Team 2017</span></div>
           </div> <!-- / row -->
       </div> <!-- container-fluid -->
