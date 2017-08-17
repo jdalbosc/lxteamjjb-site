@@ -8,6 +8,18 @@
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/handlebars-v4.0.10.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#carousel").swipe({
+          swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+              if (direction == 'left') $(this).carousel('next');
+              if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll:"vertical"
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="page-header" id="header">
