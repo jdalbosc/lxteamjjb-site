@@ -1,9 +1,15 @@
+body {
+  overflow-x: hidden;
+}
 .page-header { font-family: 'Kaushan Script', cursive; background-color: #000; color: #fff; margin: 0px 0px; padding: 0px; border: none; }
 .page-header img { width: 100%; max-width: 200px; }
 .page-header h1 { display: inline; }
 
 #title_div { text-align: center; padding: 40px 40px; }
 #who_we_are { color: black; padding: 40px 40px; }
+/* #logo_div img{
+  transform: scale(0.8, 0.8);
+} */
 
 .carousel {
   interval: 1000;
