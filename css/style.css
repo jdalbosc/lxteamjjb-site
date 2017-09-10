@@ -6,7 +6,7 @@ body {
 .page-header h1 { display: inline; }
 
 #title_div { text-align: center; padding: 40px 40px; }
-#who_we_are { color: black; padding: 40px 40px; }
+#who_we_are { color: black; }
 /* #logo_div img{
   transform: scale(0.8, 0.8);
 } */
@@ -57,8 +57,13 @@ body {
   background-color: #fff;
 }
 
-#where_we_are { background-color: #f3f3f3; padding: 40px 40px; }
-body .container-fluid { padding: 0px; }
+#where_we_are { background-color: #f3f3f3; }
+body .container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 #googleMap {
   height: 400px;
@@ -66,7 +71,6 @@ body .container-fluid { padding: 0px; }
 }
 
 footer { background-color: #2d2d30; color: #bdbdbd; }
-
 
 .standard-text-footer {
   margin-left: 3px;
@@ -86,4 +90,30 @@ footer { background-color: #2d2d30; color: #bdbdbd; }
   display: inline-block;
   line-height: 29px;
   height: 29px;
+}
+
+.main-para-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+.main-para {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-rigth: 40px;
+}
+
+.main-video {
+  display: block;
+  margin: auto;
+}
+
+.fb-video {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
