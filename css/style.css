@@ -70,17 +70,22 @@ body .container-fluid {
   width: 100%;
 }
 
-footer { background-color: #2d2d30; color: #bdbdbd; }
+.footer { background-color: #2d2d30; color: #bdbdbd; padding-bottom: 30px; padding-top: 30px; }
 
 .standard-text-footer {
   margin-left: 3px;
+  margin-right: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   display:inline-block;
   line-height:29px;
   height:29px;
 }
 
 .facebook-text-footer {
-  margin-right:3px;
+  margin-right:6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   display: inline-block;
   line-height: 29px;
   height: 29px;
@@ -139,4 +144,36 @@ footer { background-color: #2d2d30; color: #bdbdbd; }
 .video-wrapper {
 	width: 660px;
 	max-width: 100%;
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  top: auto;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  border-radius: 2px;
+  border: 2px solid #fafafa;
+  text-align: center;
+  background: #3b3b3b;
+  font-size: 22px;
+  z-index: 9999;
+}
+
+.scrollup span {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+a.scrollup {
+  opacity: 0.5;
+  color: #fafafa;
+}
+
+a.scrollup:hover {
+  opacity: 0.8;
+  color: #ffffff;
 }
