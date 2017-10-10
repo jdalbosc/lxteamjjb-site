@@ -111,6 +111,12 @@ body .container-fluid {
   padding-right: 40px;
 }
 
+#logo_ffl {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main-video {
   display: block;
   margin: auto;
