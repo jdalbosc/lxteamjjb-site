@@ -119,7 +119,10 @@ body .container-fluid {
 
 .main-video {
   display: block;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .fb-video {
