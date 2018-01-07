@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Club de jiu-jitsu brésilien, de grappling et de MMA à Eragny-sur-Oise dans le Val-d'Oise (95)">
+    <meta name="keywords" content="jiu-jitsu brésilien, JJB, grappling, MMA, Eragny-sur-Oise, Val-d'Oise, 95, 95610, Cergy Pontoise">
+    <title>LX Team JJB, jiu-jitsu brésilien, grappling</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CLobster%7COpen+Sans" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v4.0.10.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#carousel").swipe({
+          swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+              if (direction == 'left') $(this).carousel('next');
+              if (direction == 'right') $(this).carousel('prev');
+            },
+            allowPageScroll:"vertical"
+        });
+      
+        
+        var offset = 250;
+        var duration = 300;
+        
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.scrollup').fadeIn(duration);
+          } else {
+            jQuery('.scrollup').fadeOut(duration);
+          }
+        });
+
+        jQuery('.scrollup').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <!-- fb js SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10&appId=376535562763226";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- header -->
+    <div class="page-header" id="header">
+      <!-- navbar -->
+      <nav class="navbar navbar-invert">
+        <div class="container">
+        
+          <!-- start collapsed -->
+          <div class="navbar-header">
+            <button 
+                type="button" 
+                class="navbar-toggle collapsed pull-left"
+                data-toggle="collapse" 
+                data-target="#main_navbar" 
+                aria-expanded="false" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- / collapsed -->
+
+          <!-- start uncollapsed -->
+          <div class="collapse navbar-collapse" id="main_navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html#">Accueil</a></li>
+              <li class="dropdown" >
+                <a class="dropdown-toggle" href="index.html#" id="main_navbarMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Qui sommes-nous?
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#who_we_are">Présentation</a></li>
+                  <li><a href="index.html#videos">Vidéos</a></li>
+                  <li><a href="index.html#where_we_are">Contact</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" ><a href="news.html">Actualités</a></li>
+            </ul>
+          </div>
+          <!-- / uncollapsed -->
+
+        </div>
+      </nav>
+      <!-- / navbar -->
+      <div class="row">
+        <div id="logo_div" class="col-sm-2">
+          <img src="pix/logo.jpg" style="margin-left: auto; margin-right:auto; display: block;" alt="LX Team JJB" />
+        </div>
+        <div id="title_div" class="col-sm-10 text-center">
+          <h1>LX Team JJB, jiu-jitsu brésilien, grappling, MMA</h1>
+          <h3>Club de jiu-jitsu brésilien, de grappling et de MMA à Eragny-sur-Oise dans le Val-d'Oise (95)</h3>
+        </div>
+      </div> <!-- / row -->
+        
+        
+        
+    </div> <!-- / header -->
+      
+    <!-- container-fluid -->
+    <div class="container-fluid">
+      <div class="main-para">
+        <p class="main-para-title">07/01/2018 - Open Gi/NoGi Hauts-de-France</p>
+        <p>Ce week-end du 07/01/2018, la team a réalisé une belle performance avec 9 podiums à l'occasion de l'open Gi/NoGi des Hauts-de-France
+        dont une médaille d'or d'Alex Flex en -77 kilos débutants, un grand chelem pour la catégorie des -92 de kilos débutants les 3 marches étant occupées par des représentants de la LX Team, et une médaille d'argent en catégorie féminine pour Anouchka. Félicitations à elle pour sa première participation en compétition.</p>
+        <p><img class="main-para-img" src="pix/open-hauts-de-france-2018/podiums-1.jpg" width="100%" alt="Photos de groupe devant le podiums, le coach et la team dont 9 médaillés" /></p>
+      </div>
+      
+
+    </div>
+      
+    <!-- / container-fluid -->
+    <a href="#" title="Retour en haut" class="scrollup"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center" style="">
+          <div class="col-md-6 text-center">
+            <span class="facebook-text-footer">Retrouvez-nous</span>
+            <a class="facebook-picto" href="https://www.facebook.com/lxteamjjb/">
+              <img src="pix/FB-f-Logo__white_29.png" alt="Facebook" />
+            </a>
+          </div>
+          
+          <div class="col-md-6 text-center">
+            <span class="standard-text-footer">LX Team JJB 2017</span>
+            <span class="glyphicon glyphicon-copyright-mark"></span>
+          </div>
+        </div> <!-- / row -->
+      </div>
+    </footer>
+  </body>
+</html>
