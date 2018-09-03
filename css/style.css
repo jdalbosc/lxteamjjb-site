@@ -10,8 +10,15 @@ body {
 /* #logo_div img{
   transform: scale(0.8, 0.8);
 } */
+#planning {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
 
-#adresse {
+# {
   margin-bottom: 32px;
 }
 
@@ -68,6 +75,15 @@ body .container-fluid {
 #googleMap {
   height: 400px;
   width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#googleMap_2 {
+  height: 400px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .footer { background-color: #2d2d30; color: #bdbdbd; padding-bottom: 30px; padding-top: 30px; }

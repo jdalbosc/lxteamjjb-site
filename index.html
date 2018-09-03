@@ -259,24 +259,41 @@
       <div id="where_we_are" class="main-para">
         <div id="adresse">
           <p class="main-para-title">Nous rejoindre</p>
-          <p>Les cours ont lieu:</p>
-          <ul>
-            <li>Le lundi de 19h à 20h30, MMA, pour débutants et confirmés,</li>
-            <li>Le mercredi de 19h à 20h30, JJB, pour les confirmés,</li>
-            <li>Le vendredi de 20h30 à 22h, MMA, pour débutants, puis JJB confirmés en cas de nocturne.</li>
-          </ul>
-          <p>Notre adresse:</p>
+          <p>Pour toute demande d'information, contacter:</p>  
           <p style="text-align: center">
-              <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe<br />
-              Rue de la Palombe<br />
-              95610 Éragny<br />
-              <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98<br />
+            Xavier Lesigne</br>
+            <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98<br />
           </p>
+          <p>Le planning des cours pour la saison 2018/2019 est le suivant:</p>
+          <figure class="figure">
+            <img id="planning" src="pix/planning-2018-2019.jpg" class="figure-img img-fluid rounded" alt=".">
+          </figure>
+          <p style="text-align: center">
+          <p>Les cours ont lieu sur deux sites à Taverny et à Eragny:</p>
+          <p style="text-align: center">
+            <span class="glyphicon glyphicon-map-marker"></span>Gymnase Jules Ladoumègues<br />
+            Rue des écoles<br />
+            95150 Taverny<br />
+          </p>
+          <!-- Add Google Maps -->
+          <div id="googleMap_2"></div>
+          <p style="text-align: center">
+                <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe<br />
+                Rue de la Palombe<br />
+                95610 Éragny<br />
+          </p>
+          <!-- Add Google Maps -->
+          <div id="googleMap"></div>
         </div> <!-- div id="adresse" -->
-        <!-- Add Google Maps -->
-        <div id="googleMap"></div>
         <script>
         function myMap() {
+          // Taverny
+          var myCenter_2 = new google.maps.LatLng(49.011510, 2.205226);
+          var mapProp_2 = {center:myCenter_2, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map_2 = new google.maps.Map(document.getElementById("googleMap_2"), mapProp_2)
+          var marker_2 = new google.maps.Marker({position:myCenter_2});
+          marker_2.setMap(map_2);
+          // Eragny
           var myCenter = new google.maps.LatLng(49.0234603, 2.1024732);
           var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
           var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
