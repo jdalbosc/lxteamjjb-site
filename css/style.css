@@ -208,3 +208,23 @@ a.scrollup:hover {
   opacity: 0.8;
   color: #ffffff;
 }
+
+.img-portrait {
+  display: block
+}
+
+@media (min-width: 650px) {
+  .img-portrait {
+    display: none
+  }
+}
+
+.img-landscape {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .img-landscape {
+    display: none
+  }
+}
