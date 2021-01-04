@@ -226,8 +226,8 @@
       </a>
     </div> <!-- carousel -->
 
-    <!-- container-fluid -->
-    <div class="container-fluid">
+    <!-- container -->
+    <div class="container">
       <div id="who_we_are" class="main-para">
         <p class="main-para-title">Bienvenue sur la page de la LX Team JJB !</p>
         <p>Ce site est dédié à la team de Jiu-jitsu brésilien de Taverny et d'Eragny-sur-Oise. Le Jiu-jitsu brésilien est à la fois un art martial, un sport et une pratique de self-défense.</p>
@@ -287,67 +287,71 @@
           <p class="main-video">LX Team au GIC 2017</p>
         </center>
       </div> <!-- div id="videos" -->
-      
-      <div id="where_we_are" class="main-para">
-        <div id="adresse">
-          <p class="main-para-title">Nous rejoindre</p>
-          <p>Pour toute demande d'information, contacter le coach:</p>  
-          <p style="text-align: center">
-            Xavier Lesigne<br>
-            <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98<br>
-          </p>
-          <p>Le planning des cours pour la saison 2019/2020 est le suivant:</p>
-          <figure class="figure">
-            <img id="planning" src="pix/planning_2019-2020.jpg" class="figure-img img-fluid rounded main-para-img" alt=".">
-          </figure>
-          <p style="text-align: center">
-          <p>Les cours ont lieu sur deux sites à Taverny (*) et à Eragny:</p>
-          <p style="text-align: center; text-decoration:line-through">
-            <span class="glyphicon glyphicon-map-marker"></span>Gymnase Jules Ladoumègues<br>
-            Rue des écoles<br>
-            95150 Taverny<br>
-          </p>
-          <p style="text-align: center"><span style="font-weight: bold">(*): Attention, en raison de travaux de rénovation du dojo Jules Ladoumègues, les cours sont temporairement transférés sur le plateau voie des sports 
-            près du gymnase André Messager dans les algécos qui se trouvent sur le terrain de basket.<br></span>
-            <span class="glyphicon glyphicon-map-marker"></span>
-            Gymnase André Messager<br>
-            Voie des sports<br>
-            95150 Taverny<br>
-          </p>
-          <!-- Add Google Maps -->
-          <div id="googleMap_2"></div>
-          <p style="text-align: center">
-                <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe<br>
-                Rue de la Palombe<br>
-                95610 Éragny<br>
-          </p>
-          <!-- Add Google Maps -->
-          <div id="googleMap"></div>
-        </div> <!-- div id="adresse" -->
-        <script>
-        function myMap() {
-          // Taverny Ladoumegues
-          // var myCenter_2 = new google.maps.LatLng(49.011510, 2.205226);
-          //var mapProp_2 = {center:myCenter_2, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-          // Taverny Andre Messager
-          var myCenter_2 = new google.maps.LatLng(49.0145103, 2.2124412);
-          var mapProp_2 = {center:myCenter_2, zoom:18, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-          var map_2 = new google.maps.Map(document.getElementById("googleMap_2"), mapProp_2)
-          var marker_2 = new google.maps.Marker({position:myCenter_2});
-          marker_2.setMap(map_2);
-          // Eragny
-          var myCenter = new google.maps.LatLng(49.0234603, 2.1024732);
-          var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-          var marker = new google.maps.Marker({position:myCenter});
-          marker.setMap(map);
-        }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN4w1bMopTqzPGdKeqFDE4QtMInBnGJX0&callback=myMap" async defer></script>
-      </div> <!-- div id="where_we_are" -->
+    </div> <!-- div class="container" -->
 
-    </div>
-      
+    <div id="where_we_are">
+      <div class="container-fluid">
+        <div class="container">
+          <div id="adresse" class="main-para">
+            <p class="main-para-title">Nous rejoindre</p>
+            <p>Pour toute demande d'information, contacter le coach:</p>  
+            <p style="text-align: center">
+              Xavier Lesigne<br>
+              <span class="glyphicon glyphicon-phone"></span>Tel.: 06 07 48 58 98<br>
+            </p>
+            <p>Le planning des cours pour la saison 2019/2020 est le suivant:</p>
+            <figure class="figure">
+              <img src="pix/planning_2019-2020.jpg" class="figure-img img-fluid rounded main-para-img" alt=".">
+              <!-- <figcaption class="figure-caption text-center">Bonne ann&eacute;e 2021!</figcaption> -->
+            </figure>
+            <!-- </figure> -->
+            <p style="text-align: center">
+            <p>Les cours ont lieu sur deux sites à Taverny (*) et à Eragny:</p>
+            <p style="text-align: center; text-decoration:line-through">
+              <span class="glyphicon glyphicon-map-marker"></span>Gymnase Jules Ladoumègues<br>
+              Rue des écoles<br>
+              95150 Taverny<br>
+            </p>
+            <p style="text-align: center"><span style="font-weight: bold">(*): Attention, en raison de travaux de rénovation du dojo Jules Ladoumègues, les cours sont temporairement transférés sur le plateau voie des sports 
+              près du gymnase André Messager dans les algécos qui se trouvent sur le terrain de basket.<br></span>
+              <span class="glyphicon glyphicon-map-marker"></span>
+              Gymnase André Messager<br>
+              Voie des sports<br>
+              95150 Taverny<br>
+            </p>
+            <!-- Add Google Maps -->
+            <div id="googleMap_2"></div>
+            <p style="text-align: center">
+                  <span class="glyphicon glyphicon-map-marker"></span>Salle Le Complexe<br>
+                  Rue de la Palombe<br>
+                  95610 Éragny<br>
+            </p>
+            <!-- Add Google Maps -->
+            <div id="googleMap"></div>
+          </div> <!-- div id="adresse" -->
+          <script>
+          function myMap() {
+            // Taverny Ladoumegues
+            // var myCenter_2 = new google.maps.LatLng(49.011510, 2.205226);
+            //var mapProp_2 = {center:myCenter_2, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            // Taverny Andre Messager
+            var myCenter_2 = new google.maps.LatLng(49.0145103, 2.2124412);
+            var mapProp_2 = {center:myCenter_2, zoom:18, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            var map_2 = new google.maps.Map(document.getElementById("googleMap_2"), mapProp_2)
+            var marker_2 = new google.maps.Marker({position:myCenter_2});
+            marker_2.setMap(map_2);
+            // Eragny
+            var myCenter = new google.maps.LatLng(49.0234603, 2.1024732);
+            var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+          }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN4w1bMopTqzPGdKeqFDE4QtMInBnGJX0&callback=myMap" async defer></script>
+        </div> 
+      </div>
+    </div> <!-- div id="where_we_are" -->
     <!-- / container-fluid -->
     <a href="#" title="Retour en haut" class="scrollup"><span class="glyphicon glyphicon-chevron-up"></span></a>
     <footer class="footer">

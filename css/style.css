@@ -10,18 +10,6 @@ body {
 /* #logo_div img{
   transform: scale(0.8, 0.8);
 } */
-#planning {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-  margin-top: 32px;
-  max-width: 645px;
-}
-
-# {
-  margin-bottom: 32px;
-}
 
 .carousel-inner img {
     background-color: black;
@@ -61,13 +49,16 @@ body {
   background-color: #fff;
 }
 
-#where_we_are { background-color: #f3f3f3; }
+#where_we_are { 
+  background-color: #f3f3f3;
+}
+
 body .container-fluid {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* override default bootstrap left/right padding */
   padding-left: 0px;
   padding-right: 0px;
 }
+
 
 #googleMap {
   height: 400px;
@@ -102,8 +93,8 @@ body .container-fluid {
   display: inline-block;
   line-height: 29px;
   height: 29px;
-  
 }
+
 .facebook-picto {
   display: inline-block;
   line-height: 29px;
@@ -118,8 +109,8 @@ body .container-fluid {
 }
 
 .main-para {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .main-para-img {
