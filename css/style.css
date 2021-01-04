@@ -143,13 +143,6 @@ body .container-fluid {
   margin-bottom: 6px;
 }
 
-.fb-video {
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
